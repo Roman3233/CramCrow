@@ -1,0 +1,6 @@
+@CramCrow.API_HostAddress = http://localhost:5153
+
+GET {{CramCrow.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
