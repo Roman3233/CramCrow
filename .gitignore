@@ -1,0 +1,102 @@
+## ==============================
+## .NET / ASP.NET Core 
+## ==============================
+
+# Build results
+bin/
+obj/
+out/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+
+# NuGet
+*.nupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+# EF Core migrations bundle 
+efbundle
+
+# User secrets / local config
+appsettings.Development.json
+appsettings.*.local.json
+secrets.json
+
+# Logs
+logs/
+*.log
+
+# Publish output
+publish/
+PublishProfiles/
+
+# DB files 
+*.db
+*.db-shm
+*.db-wal
+
+## ==============================
+## Angular / Node 
+## ==============================
+
+# Dependencies
+client/node_modules/
+node_modules/
+
+# Angular build output
+client/dist/
+client/.angular/
+dist/
+.angular/
+
+# Environment files 
+client/src/environments/environment.local.ts
+
+# Logs
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
+npm-debug.log*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+
+# Cache
+client/.cache/
+client/.sass-cache/
+
+## ==============================
+## Env files 
+## ==============================
+
+# Env files 
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# IDE files
+*.iml
