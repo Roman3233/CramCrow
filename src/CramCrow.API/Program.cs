@@ -1,10 +1,10 @@
-using Microsoft.EntityFrameworkCore;
-using CramCrow.Infrastructure.Persistence;
+using CramCrow.Application;
+using CramCrow.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
