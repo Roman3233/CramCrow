@@ -47,6 +47,11 @@ public class CardService
         }
         const int MaxLevel = 10;
 
+        if (card.IsLearned)
+        {
+            throw new InvalidOperationException("Cannot review a card that is already learned");
+        }
+
         switch (grade)
         {
             case ReviewGrade.DontRemember:
