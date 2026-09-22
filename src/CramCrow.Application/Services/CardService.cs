@@ -96,6 +96,10 @@ public class CardService
         return MapToDto(card);
     }
 
+    public async Task DeleteCardAsync(Guid cardId)
+    {
+        await _cardRepository.DeleteAsync(cardId);
+    }
     private static readonly TimeSpan[] LevelIntervals =
     {
         TimeSpan.Zero,

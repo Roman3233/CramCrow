@@ -38,4 +38,11 @@ public class CardsController : ControllerBase
         var updatedCard = await _cardService.ReviewAsync(id, dto.Grade);
         return Ok(updatedCard);
     }
+    
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteCard(Guid id)
+    {
+        await _cardService.DeleteCardAsync(id);
+        return NoContent();
+    }
 }
